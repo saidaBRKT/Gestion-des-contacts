@@ -2,8 +2,26 @@
     background-color: #ECEFF1;
 }
 .nav-link{
-    color: rgb(6, 70, 126);
+    color: #12CE81;
     cursor: pointer;
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    30% {transform: scale(1.5);}
+    80% {transform: scale(1);}
+}
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+.row{
+    height: 87vh;
+}
+.contentt{
+    height: 70vh;
+    background-color: #ECEFF1;
+    border-radius: 20px;
 }
 .content{
     display: flex;
@@ -14,8 +32,8 @@
     width: 100%;
 }
 .content .login{
-margin: auto;
-border-radius: 10px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 /*page accueil*/
@@ -36,4 +54,33 @@ span i{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.add{
+    border: 2px solid #12CE81;
+    border-radius: 20px;
+}
+.profile{
+    border-left: 7px solid #12CE81;
+    border-radius: 20px;
+    background-color: #ECEFF1;
+    height: 60vh;
+    position: relative;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile img{
+    position: absolute;
+    height:20vh;
+    width:20vh;
+    top:-10vh;
+    left:40px;
+    width:150px; 
+    height:150px;
+    border: 3px dotted #12CE81;
+    border-radius: 50%;
+}
+.profile table th{
+    color:#12CE81;
 }
